@@ -14,7 +14,11 @@ else
 	PROMPT='%{$fg[green]%}%n%{$reset_color%}@%m %{$fg[green]%}%2~%{$reset_color%} $(my_git_prompt_info)%{$reset_color%}%(?..%{$fg[red]%}[%{$fg_bold[red]%}%?%{$reset_color%}%{$fg[red]%}]%{$reset_color%})%B»%b '
 fi
 
+# Shows time at end of prompt line
 RPROMPT='%t'
+
+# Shows return arrow when output does not end in newline
+PROMPT_EOL_MARK='↵ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX=") %{$reset_color%}"
