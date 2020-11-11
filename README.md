@@ -12,3 +12,7 @@ The theme can be immediatly effective upon reloading the shell via `exec -l $SHE
 
 ## Use
 This theme is very similar to the fish theme. The most obvious difference is the timestamp at the far right of the prompt and the use of `»` instead of `>`. zshfish has the same git integration as the lukerandall theme. This integration shows when `$PWD` is a git directory and allows the user to see if the local git directory is different from the remote repository.
+
+![zsh-theme-image](https://user-images.githubusercontent.com/63197781/98867617-7a149280-2434-11eb-879d-a5e1444ddc71.png)
+
+To feel more like fish, plugins can be added for [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [auto-suggestions](https://github.com/zsh-users/zsh-autosuggestions)
