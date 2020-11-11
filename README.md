@@ -8,6 +8,8 @@ Clone this repository or download the theme file directly.
 
 If [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) is installed, copy `zshfish.zsh-theme` to `~/.oh-my-zsh/custom/themes` and change `ZSH_THEME` in `~/.zshrc` to `"zshfsh"`
 
+Alternatively, run the `omzsh-install.sh` script to have this done for you.
+
 The theme can be immediatly effective upon reloading the shell via `exec -l $SHELL`
 
 ## Use
@@ -16,3 +18,4 @@ This theme is very similar to the fish theme. The most obvious difference is the
 ![zsh-theme-image](https://user-images.githubusercontent.com/63197781/98867617-7a149280-2434-11eb-879d-a5e1444ddc71.png)
 
 To feel more like fish, plugins can be added for [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [auto-suggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
