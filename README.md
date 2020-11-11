@@ -1,5 +1,5 @@
 # zshfish
-A theme for `zsh` that looks like the `fish` theme. It includes core aspects of the default `fish` theme such as nice colors, a similar are for return codes, and a change in color indicating if the shell is run in `ssh` or not.
+A theme for zsh that looks like the fish theme. It includes core aspects of the default fish theme such as nice colors, a similar area for return codes, and a change in color indicating if the shell is run in ssh or not.
 
 ## Installation
 This theme requires zsh to be installed
