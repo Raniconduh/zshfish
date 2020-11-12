@@ -24,7 +24,7 @@ fi
 
 # Test to see if shell is run under ssh
 if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
-	local host='%{fg[yellow]$}%m '
+	local host='%{fg[yellow]%}%m '
 else
 	local host='%m '
 fi
