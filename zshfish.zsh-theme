@@ -7,12 +7,30 @@ function my_git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$GIT_STATUS$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
-# Checks to see if the shell is running under ssh
-if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
-	PROMPT='%{$fg[green]%}%n%{$reset_color%}@%{$fg[yellow]%}%m %{$fg[green]%}%2~%{$reset_color%} $(my_git_prompt_info)%{$reset_color%}%(?..%{$fg[red]%}[%{$fg_bold[red]%}%?%{$reset_color%}%{$fg[red]%}]%{$reset_color%})%B»%b '
+local name='%{$fg[green]%}%n%{$reset_color%}@'
+local gitpinfo='$(my_git_prompt_info)%{$reset_color%}'
+local error='%(?..%{$fg[red]%}[%{$fg_bold[red]%}%?%{$reset_color%}%{$fg[red]%}]%{$reset_color%})'
+
+
+# Test to see if user is root
+if [[ $EUID == 0 ]]; then
+	local dir='%{$fg[red]%}%2~%{$reset_color%} '
+	local arrow='# '
 else
-	PROMPT='%{$fg[green]%}%n%{$reset_color%}@%m %{$fg[green]%}%2~%{$reset_color%} $(my_git_prompt_info)%{$reset_color%}%(?..%{$fg[red]%}[%{$fg_bold[red]%}%?%{$reset_color%}%{$fg[red]%}]%{$reset_color%})%B»%b '
+	local dir='%{$fg[green]%}%2~%{$reset_color%} '
+	local arrow='%B»%b '
 fi
+
+
+# Test to see if shell is run under ssh
+if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
+	local host='%{fg[yellow]$}%m '
+else
+	local host='%m '
+fi
+
+
+PROMPT=$name$host$dir$gitpinfo$error$arrow
 
 # Shows time at end of prompt line
 RPROMPT='%t'
