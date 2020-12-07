@@ -7,6 +7,7 @@ This theme requires zsh and oh-my-zsh to be installed.
 Clone this repository or download the theme file directly.
 
 Download directly with curl: `curl -fsSLO "https://raw.githubusercontent.com/Raniconduh/zshfish/master/zshfish.zsh-theme"`
+
 Download directly with wget: `wget "https://raw.githubusercontent.com/Raniconduh/zshfish/master/zshfish.zsh-theme"`
 
 If [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) is installed, copy `zshfish.zsh-theme` to `~/.oh-my-zsh/custom/themes` 
