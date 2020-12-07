@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm ~/.oh-my-zsh/custom/themes/zshfish.zsh-theme
+rm -f ~/.oh-my-zsh/custom/themes/zshfish.zsh-theme
 cp zshfish.zsh-theme ~/.oh-my-zsh/custom/themes
 
 echo "Installation finished."
