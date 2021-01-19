@@ -4,7 +4,7 @@ if [ $1 ]; then
 	echo " Install Script for zshfish theme"
 	echo ""
 	echo " How to use:"
-	echo "   Run this script and zshfish thene will be automativally installed"
+	echo "   Run this script and zshfish theme will be automatically installed"
 	echo "   Requires omzsh"
 	echo ""
 	echo " Options:"
