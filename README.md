@@ -14,7 +14,7 @@ If [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) is installed, copy `zshfish.z
 
 Alternatively, run the `omzsh-install.sh` script to have this done for you.
 
-Now change `ZSH_THEME` in `~/.zshrc` to `"zshfsh"`
+Now change `ZSH_THEME` in `~/.zshrc` to `"zshfish"`
 
 The theme can be immediatly effective upon reloading the shell via `exec -l $SHELL`
 
